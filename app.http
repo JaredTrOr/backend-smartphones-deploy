@@ -1,0 +1,43 @@
+### ROOT
+GET http://localhost:4000
+
+### Obtener smartphones
+GET http://localhost:4000/api/get-smartphones
+
+### Obtener smartphone por ID
+GET http://localhost:4000/api/get-smartphone-id/6681e35b67abc13916c9f5ec
+
+### Agregar un smartphones
+POST http://localhost:4000/api/create-smartphone
+content-type: application/json
+
+{
+    "nombre": "Redmi Note 20s",
+    "marca": "Xiaomi",
+    "modelo": "redmmi",
+    "color": "negro",
+    "memoriaRAM": "16 gb",
+    "almacenamiento": "256 gb",
+    "sistemaOperativo": "android 11",
+    "procesador": "Snapdragon",
+    "tasaDeRefresco": "20 por segundo"
+}
+
+### Actualizar empleado por ID
+PUT http://localhost:4000/api/update-smartphone/6681e35b67abc13916c9f5ec
+content-type: application/json
+
+{
+    "nombre": "Redmi Note 10s",
+    "marca": "Xiaomi",
+    "modelo": "redmmi note",
+    "color": "azul",
+    "memoriaRAM": "16 gb",
+    "almacenamiento": "500 gb",
+    "sistemaOperativo": "android 11",
+    "procesador": "Snapdragon",
+    "tasaDeRefresco": "16 por segundo"
+}
+
+### Eliminar empleado POR ID
+DELETE http://localhost:4000/api/delete-smartphone/6681e9cbdc95ca07a065a1f5
